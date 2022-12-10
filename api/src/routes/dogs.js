@@ -69,9 +69,8 @@ router.get('/:id', async (req, res) => {
 
   try {
     const dog = await getDogById(id);
-    console.log(dog);
+
     return res.status(200).json(dog);
-    // Falta mensaje de id no encontrado
   } catch (error) {
     return res.status(404).send(error);
   }

@@ -163,7 +163,7 @@ module.exports = {
         lifeSpan: dogsDbFound.lifeSpan,
         createdForDb: dogsDbFound.createdForDb,
       };
-      console.log(detailsDogsDb);
+
       return detailsDogsDb;
     }
 
