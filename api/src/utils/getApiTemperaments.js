@@ -9,8 +9,8 @@ const getApiTemperaments = async () => {
     const arr = response.data
       .map(data => data.temperament)
       .join(', ')
-      .split(', ')
-      .sort();
+      .split(', ');
+
     const arrTemperaments = [...new Set(arr)];
 
     arrTemperaments.forEach(
